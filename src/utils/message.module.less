@@ -1,0 +1,35 @@
+@import "~@/styles/mixin.less";
+@import "~@/styles/var.less";
+.message{
+    .self-center();
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 7px 30px;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    transition: 0.7s;
+    transform: translate(-50%, -50%) translateY(25px);
+    opacity: 0;
+    
+    &-success{
+        background-color: @success;
+    }
+    &-error{
+        background-color: @danger;
+    }
+    &-info{
+        background-color: @primary;
+    }
+    &-warn{
+        background-color: @warn;
+    }
+}
+
+.icon {
+    font-size: 21px;
+    margin-right: 7px;
+}
+
+// import styles from "@/utils/message.module.less";
+// console.log(styles.message);
